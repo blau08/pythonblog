@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <meta charset="utf-8">
+    <title>Python Blog</title>
+  </head>
+  <body>
+Testing Hello Moto
+<button id="new_post_button">
+  New Post
+</button>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("#new_post_button").on('click', function() {
+        $(this).remove();
+      $("body").append(
+        '<input id="input_box" name="input_box_name" placeholder="Title">'
+      )
+      });
+    });
+</script>
+  </body>
+</html>
